@@ -1,28 +1,15 @@
+import VideoList from './VideoList.js';
+import VideoData from '../data/VideoData.js';
+
 var App = () => (
 	<div>
 		<nav className="navbar">
-			<div className="col-md-6 offset-md-3">
-				<div>
-					<h5>
-						<em>hello</em> view goes here
-					</h5>
-				</div>
-			</div>
+			<div className="col-md-6 offset-md-3"></div>
 		</nav>
 		<div className="row">
-			<div className="col-md-7">
-				<div>
-					<h5>
-						<em>test</em> view goes here
-					</h5>
-				</div>
-			</div>
+			<div className="col-md-7"></div>
 			<div className="col-md-5">
-				<div>
-					<h5>
-						<em>test</em> view goes here
-					</h5>
-				</div>
+				<VideoList videos={VideoData} />
 			</div>
 		</div>
 	</div>
